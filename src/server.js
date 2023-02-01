@@ -129,7 +129,7 @@ app.use(authRouter)
 // })
 
 // Variables de entorno
-const puerto = config.PORT;
+const puerto = process.env.PORT || config.PORT;
 // const PORT = process.argv[2] || 8080;
 //let MODO = config.MODO
 
