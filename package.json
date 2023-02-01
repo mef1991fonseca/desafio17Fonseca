@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js",
+    "start": "node src/server.js",
     "create-tables": "node src/scripts/createTables.js",
     "node-fork": "node src/server.js -p 8081",
     "node-cluster": "node src/server.js -p 8081 -m CLUSTER",
