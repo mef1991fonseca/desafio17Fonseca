@@ -146,8 +146,8 @@ if(MODO === "CLUSTER" && cluster.isPrimary){
         cluster.fork()
     })
 }else{
-    const server = app.listen(PORT,()=>{
-        logger.info(`listening on port ${PORT} on process ${process.pid}`)
+    const server = app.listen(puerto,()=>{
+        logger.info(`listening on port ${puerto} on process ${process.pid}`)
     })
     //websocket server
     const io = new Server(server);
